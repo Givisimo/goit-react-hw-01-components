@@ -1,0 +1,9 @@
+.online {
+  background-color: greenyellow;
+  height: 30px;
+}
+
+.offline {
+  background-color: #ff2f3c;
+  height: 30px;
+}
