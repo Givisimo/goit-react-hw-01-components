@@ -5,12 +5,12 @@ import styles from './Statistics.module.css';
 const Statistics = ({ data, title }) => {
   return (
     <section className={styles.statistics}>
-      {title && <h2 className="title">{title}</h2>}
+      {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles['stat-list']}>
         {data.length > 0 &&
           data.map(item => (
-            <li className="item" key={item.id}>
+            <li className="item" key={item.id} id={styles[`${item.id}`]}>
               <span className="label">{item.label}</span>
               <span className="percentage">{item.percentage}%</span>
             </li>
